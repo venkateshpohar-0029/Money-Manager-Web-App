@@ -1,0 +1,25 @@
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;padding:16px;background:#f6f8fa;color:#0b0b0b}
+.container{max-width:900px;margin:0 auto}
+header{margin-bottom:12px}
+h1{margin:0;font-size:28px}
+.tagline{margin:4px 0 0 0;color:#444}
+.card{background:#fff;padding:14px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.04);margin:12px 0}
+.row{display:flex;flex-direction:column;margin-bottom:10px}
+.row label{font-size:13px;margin-bottom:6px;color:#333}
+.row input[type="text"], .row input[type="number"], .row input[type="date"], .row select, .row input[type="month"], .filters input[type="search"]{padding:8px;border:1px solid #ddd;border-radius:6px}
+.actions{display:flex;gap:8px}
+.actions button{padding:8px 12px;border-radius:8px;border:none;background:#0b5ed7;color:white;cursor:pointer}
+.actions button#clear-all{background:#dc3545}
+.actions button#export-csv{background:#198754}
+.filters{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.filters label{display:flex;flex-direction:column;font-size:13px}
+#transactions-table{width:100%;border-collapse:collapse;margin-top:8px}
+#transactions-table th,#transactions-table td{padding:8px;border-bottom:1px solid #eee;text-align:left}
+.totals{margin-top:10px;font-weight:600}
+footer{margin-top:18px;text-align:center;color:#666}
+@media(min-width:700px){
+  .row{flex-direction:row;gap:12px;align-items:center}
+  .row label{width:140px;margin-bottom:0}
+  .row input, .row select{flex:1}
+}
